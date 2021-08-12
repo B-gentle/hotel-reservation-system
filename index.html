@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="THis is is">
+	<link rel="icon" type="image/gif" href="images/FB_IMG_1628452097022.jpg">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Welcome to hotel45</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+		<h1>BeeTech</h1>
+		<h2>Enhancing Tech since 2020</h2>
+		<a class="btn">Make A Reservation</a>
+		<div class="submenu">
+			<a href="#select-room">Room Reservation</a>
+			<a href="#">Restaurant Order</a>
+            <a href="#">Event Center Reservation</a>
+			
+		</div>
+	</div>
+	</header>
+
+	<section class="features">
+		<div class="container">
+			<div class="feature">
+			<img src="images/pickk logo 2.png" width="50px" alt="White Logo Brand" />
+			<p>How we Started</p>
+			</div>
+
+			<div class="feature">
+			<img src="images/FB_IMG_1628452097022.jpg" width="50px" alt="Blue Logo brand" />
+			<p>Where we Are</p>
+			</div>
+
+			<div class="feature">
+			<img src="images/pickk-logo-withouth-bg.png" width="50px" />
+			<p>Our Destination</p>
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="reservation-forms">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<form>
+						<select id="select-room" class="form-control">
+							<option value="" selected>Select Room</option>
+							<option value="N250,000">Pent Suite</option>
+							<option value="N50,000">Duplex</option>
+							<option value="N120,000">Twin Duplex</option>
+							<option value="N150,000">Sea View pensuite</option>
+							<option value="N10,000">Room 047</option>
+							<option value="N10,000">Room 501</option>
+							<option value="N10,000">Room 307</option>
+							<option value="N9,000">Room 419</option>
+							<option value="N15,000">Room 406</option>
+							<option value="N100,000">Acoustic</option>
+						</select>
+						<div class="price-label">
+							<input class="form-control" type="text" id="roomPrice" disabled placeholder="Price">
+						</div>
+						
+					</form>
+				</div> 
+				<div class="col-lg-4 col-sm-6">
+					<select id="chooseMeal" class="custom-select">
+						<option value="" selected>Select Meal</option>
+						<option value="N2500">Egusi and Eba</option>
+						<option value="N1500">Rice and Stew</option>
+						<option value="N2000">Rice and Salad</option>
+						<option value="N1000">Beans and Plantain</option>
+						<option value="N4000">Afang and Semo</option>
+					</select>
+					<div class="price-label">
+						<input class="form-control" type="text" id="foodPrice" placeholder="Price" disabled >
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-7">
+					<h3><label>Book Event Center</label></h3>
+					<label class="eventDate">Date of Event:</label>
+					<input type="date" class="form-control" id="checkInDate">
+					<input type="text" class="form-control" placeholder="Nature of Event">
+				</div> 
+			</div>
+		</div>	
+	</section>
+
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">My Bookings</a></li>
+				<li><a href="">Contacts</a></li>
+			</ul>
+			<p>All Rights reserved</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
