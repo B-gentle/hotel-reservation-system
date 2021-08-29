@@ -1,29 +1,36 @@
 $(function() {
-	$(".btn").click(function(){
+	$(".header-btn").click(function(){
 		$(".submenu").slideToggle(500);
 	});
 });
 
-let checkInDate = document.querySelector('#checkInDate');
-let duration = document.querySelector('#duration');
-let checkOutDate = document.querySelector('#checkOutDate');
-console.log(duration);
-duration.addEventListener('input', dueDate);
 
-function dueDate() {
-  let durationValue = duration.value;
-  let checkInDateValue = checkInDate.value;
+// let checkInDate = document.querySelector('#checkInDate');
+// let duration = document.querySelector('#duration');
+// let checkOutDate = document.querySelector('#checkOutDate');
 
-  if (durationValue  && checkInDateValue){
-    let outputDate = parseFloat(checkInDateValue + durationValue);
-    checkOutDate.value = outputDate;
-    alert(durationValue);
-  //   c.setAttribute(type)
-  }else{
-    alert("enter duration");
-  };
+// console.log(checkInDate.getDate());
+// duration.addEventListener('change', dueDate);
+
+// function dueDate() {
+//   let durationValue = duration.value;
   
-};
+//   let checkInDateValue = checkInDate.value;
+
+
+//   parseFloat(checkInDateValue);
+//   parseFloat(durationValue);
+//   let outputDate = checkInDateValue + durationValue;
+//   console.log(outputDate);
+  // if (durationValue  && checkInDateValue){
+  //  checkOutDate.value = outputDate;
+  //   alert(outputDate);
+ //   c.setAttribute(type)
+  // }else{
+  //   alert("enter duration");
+  // };
+  
+// };
 
 let selectRoom = document.getElementById("select-room");
 let chooseMeal = document.querySelector('#chooseMeal');

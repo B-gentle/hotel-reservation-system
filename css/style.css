@@ -1,3 +1,19 @@
+.gradeMe-header{
+	background-color: black;
+	color: #FFFFFF;
+	padding: 20px 0;
+}
+
+.grade-me-button{
+	background-color: black;
+	color: #FFFFFF;
+	margin-top: 1.5em;
+}
+
+.sign-up-col{
+	margin: 1.5em 0 0 12em;
+}
+
 header{
 	background-color: #df643f;
 	color: #FFFFFF;
@@ -51,16 +67,14 @@ header{
 	color: white;
 	text-decoration: none;
 	display: block;
-	font-family: makeAReservation;
-	
-	
-	
+	font-family: makeAReservation;	
 
 }
 
 .features{
 	background-color: #FFFFFF;
 	color: #000000;
+	text-align: center;
 }
 
 .feature{
@@ -71,7 +85,6 @@ header{
 
 section{
 	padding: 40px 0;
-	text-align: center;
 }
 
 .reservation-forms{
@@ -92,13 +105,18 @@ select.form-control{
 	border-radius: 0%;
 }
 
+form.hotelReservationForm .form-control,
+.roomreservebutton{
+	max-width: 70%;
+}
+
 .top-form{
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
 }
 
 input[type=date]{
-	background-color: #69b680;
+	background-color: #df643f;
 }
 
 .form-btn{
@@ -172,5 +190,14 @@ footer li a:hover{
 @media screen and (max-width: 480px){
 	.submenu{
 		position: relative;
+	}
+
+	form.hotelReservationForm .form-control,
+.roomreservebutton{
+	max-width: 100%;
+}
+
+	.sign-up-col{
+		margin: 0;
 	}
 }

@@ -16,11 +16,11 @@
 		<div class="container">
 		<h1>BeeTech</h1>
 		<h2>Enhancing Tech since 2020</h2>
-		<a class="btn">Make A Reservation</a>
+		<a class="btn header-btn">Make A Reservation</a>
 		<div class="submenu">
 			<a href="#select-room">Room Reservation</a>
 			<a href="#">Restaurant Order</a>
-            <a href="#">Event Center Reservation</a>
+            <a href="#" data-toggle="modal" data-target="#eventCenterModal">Event Center Reservation</a>
 			
 		</div>
 	</div>
@@ -47,11 +47,12 @@
 	</section>
 
 	<section class="reservation-forms">
-		<div class="container">
+		<div class="container-lg container-sm">
 			<div class="row">
-				<div class="col-lg-4 col-sm-6">
-					<form>
-						<select id="select-room" class="form-control">
+				<div class="col-md-6 col-sm-12">
+					<h3 class="form-header">Hotel Reservation</h3>
+					<form class="hotelReservationForm">
+						<select id="select-room" class="form-control top-form">
 							<option value="" selected>Select Room</option>
 							<option value="N250,000">Pent Suite</option>
 							<option value="N50,000">Duplex</option>
@@ -67,37 +68,65 @@
 						<div class="price-label">
 							<input class="form-control" type="text" id="roomPrice" disabled placeholder="Price">
 						</div>
-						
+						<!-- <label for="">Check In Date</label> -->
+						<input type="date" class="form-control" id="checkInDate">
+						<input type="text" class="form-control" id="duration" placeholder="Duration of Days">
+						<input type="date" class="form-control" id="checkOutDate" disabled>
+						<button type="button" class="btn form-btn roomreservebutton">Proceed To Make Payment</button>
 					</form>
 				</div> 
-				<div class="col-lg-4 col-sm-6">
-					<select id="chooseMeal" class="custom-select">
-						<option value="" selected>Select Meal</option>
-						<option value="N2500">Egusi and Eba</option>
-						<option value="N1500">Rice and Stew</option>
-						<option value="N2000">Rice and Salad</option>
-						<option value="N1000">Beans and Plantain</option>
-						<option value="N4000">Afang and Semo</option>
-					</select>
-					<div class="price-label">
-						<input class="form-control" type="text" id="foodPrice" placeholder="Price" disabled >
-					</div>
+				<div class="col-md-4 offset-md-2 col-sm-12">
+					<h3 class="form-header">Meal Order</h3>
+					<form>
+						<select id="chooseMeal" class="form-control top-form">
+							<option value="" selected>Select Meal</option>
+							<option value="N2500">Egusi and Eba</option>
+							<option value="N1500">Rice and Stew</option>
+							<option value="N2000">Rice and Salad</option>
+							<option value="N1000">Beans and Plantain</option>
+							<option value="N4000">Afang and Semo</option>
+						</select>
+						<div class="price-label">
+							<input class="form-control" type="text" id="foodPrice" placeholder="Price" disabled >
+						</div>
+						<button type="button" class="btn form-btn">Place Order</button>
+					</form>
 				</div>
-				<div class="col-lg-4 col-sm-7">
-					<h3><label>Book Event Center</label></h3>
-					<label class="eventDate">Date of Event:</label>
-					<input type="date" class="form-control" id="checkInDate">
-					<input type="text" class="form-control" placeholder="Nature of Event">
-				</div> 
 			</div>
 		</div>	
 	</section>
+
+
+	<!-- Event Center Modal -->
+	<div class="modal fade" id="eventCenterModal" tabindex="-1" aria-labelledby="eventCenterModal" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<h3 class="form-header">Book Event Center</h3>
+				<label class="eventDate">Date of Event:</label>
+				<form>
+					<input type="date" class="form-control top-form" id="">
+					<textarea rows="5" class="form-control" placeholder="Nature of Event"></textarea>
+					<input type="button" class="btn form-btn" value="Submit">
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
 
 	<footer>
 		<div class="container">
 			<ul>
 				<li><a href="">Home</a></li>
-				<li><a href="">My Bookings</a></li>
+				<li><a href="">My Reservations</a></li>
 				<li><a href="">Contacts</a></li>
 			</ul>
 			<p>All Rights reserved</p>
