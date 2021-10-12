@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="THis is is">
 	<link rel="icon" type="image/gif" href="images/FB_IMG_1628452097022.jpg">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Welcome to hotel45</title>
+	<title>Welcome to hotel45</title>
 </head>
+
 <body>
 	<header>
 		<div class="container">
-		<h1>BeeTech</h1>
-		<h2>Enhancing Tech since 2020</h2>
-		<a class="btn header-btn">Make A Reservation</a>
-		<div class="submenu">
-			<a href="#select-room">Room Reservation</a>
-			<a href="#">Restaurant Order</a>
-            <a href="#" data-toggle="modal" data-target="#eventCenterModal">Event Center Reservation</a>
-			
+			<h1>BeeTech</h1>
+			<h2>Enhancing Tech since 2020</h2>
+			<a class="btn header-btn">Make A Reservation</a>
+			<div class="submenu">
+				<a href="#select-room">Room Reservation</a>
+				<a href="#" data-toggle="modal" data-target=".kingo-modal-lg">Restaurant Order</a>
+				<a href="#" data-toggle="modal" data-target="#eventCenterModal">Event Center Reservation</a>
+
+			</div>
 		</div>
-	</div>
 	</header>
 
 	<section class="features">
 		<div class="container">
 			<div class="feature">
-			<img src="images/pickk logo 2.png" width="50px" alt="White Logo Brand" />
-			<p>How we Started</p>
+				<img src="images/pickk logo 2.png" width="50px" alt="White Logo Brand" />
+				<p>How we Started</p>
 			</div>
 
 			<div class="feature">
-			<img src="images/FB_IMG_1628452097022.jpg" width="50px" alt="Blue Logo brand" />
-			<p>Where we Are</p>
+				<img src="images/FB_IMG_1628452097022.jpg" width="50px" alt="Blue Logo brand" />
+				<p>Where we Are</p>
 			</div>
 
 			<div class="feature">
-			<img src="images/pickk-logo-withouth-bg.png" width="50px" />
-			<p>Our Destination</p>
+				<img src="images/pickk-logo-withouth-bg.png" width="50px" />
+				<p>Our Destination</p>
 			</div>
 		</div>
-		
+
 	</section>
 
 	<section class="reservation-forms">
@@ -74,53 +76,83 @@
 						<input type="date" class="form-control" id="checkOutDate" disabled>
 						<button type="button" class="btn form-btn roomreservebutton">Proceed To Make Payment</button>
 					</form>
-				</div> 
+				</div>
 				<div class="col-md-4 offset-md-2 col-sm-12">
 					<h3 class="form-header">Meal Order</h3>
 					<form>
 						<select id="chooseMeal" class="form-control top-form">
 							<option value="" selected>Select Meal</option>
-							<option value="N2500">Egusi and Eba</option>
-							<option value="N1500">Rice and Stew</option>
-							<option value="N2000">Rice and Salad</option>
-							<option value="N1000">Beans and Plantain</option>
-							<option value="N4000">Afang and Semo</option>
+							<option value="N2800">Afang Soup with Fish and Semo</option>
+							<option value="N1000">Boiled Yam and Egg Sauce</option>
+							<option value="N2300">Fried Rice and Chicken</option>
+							<option value="N2300">Garri/Afang and Goat Meat</option>
+							<option value="N1000">Irish chip/ Egg Sauce</option>
+							<option value="N2300">Jollof Rice/Chicken</option>
+							<option value="N2300">Melon/Garri with Chicken</option>
+							<option value="N2300">Melon/Semo with Beef</option>
+							<option value="N1000">Noodles and Omellet</option>
+							<option value="N500">Poundo</option>
+							<option value="N1300">Pepper Chicken</option>
+							<option value="N1000">Plantainand Egg Sauce</option>
+							<option value="N2800">Poundo/Melon and Stockfish</option>
+							<option value="N500">Tea</option>
+							<option value="N2300">White Rice/Chicken Pepper Soup</option>
 						</select>
 						<div class="price-label">
-							<input class="form-control" type="text" id="foodPrice" placeholder="Price" disabled >
+							<input class="form-control" type="text" id="foodPrice" placeholder="Price" disabled>
 						</div>
+						<input type="text" class="form-control" placeholder="No. Of Plates">
 						<button type="button" class="btn form-btn">Place Order</button>
 					</form>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</section>
 
 
 	<!-- Event Center Modal -->
 	<div class="modal fade" id="eventCenterModal" tabindex="-1" aria-labelledby="eventCenterModal" aria-hidden="true">
 		<div class="modal-dialog">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h3 class="form-header">Book Event Center</h3>
+					<label class="eventDate">Date of Event:</label>
+					<form>
+						<input type="date" class="form-control top-form" id="">
+						<textarea rows="5" class="form-control" placeholder="Nature of Event"></textarea>
+						<input type="button" class="btn form-btn" value="Submit">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-" data-dismiss="modal">Close</button>
+				</div>
 			</div>
-			<div class="modal-body">
-				<h3 class="form-header">Book Event Center</h3>
-				<label class="eventDate">Date of Event:</label>
-				<form>
-					<input type="date" class="form-control top-form" id="">
-					<textarea rows="5" class="form-control" placeholder="Nature of Event"></textarea>
-					<input type="button" class="btn form-btn" value="Submit">
-				</form>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-" data-dismiss="modal">Close</button>
-			</div>
-		  </div>
 		</div>
-	  </div>
+	</div>
+
+
+	<!-- Iframe1 Modal -->
+	<div class="modal fade kingo-modal-lg" tabindex="-1" aria-labelledby="kingo-modal" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SMHnvstS7VQ"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<p>When kingo started tutorials</p>
+			</div>
+		</div>
+	</div>
+
+
+
 
 	<footer>
 		<div class="container">
@@ -134,8 +166,9 @@
 	</footer>
 
 	<script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/popper.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
+
 </html>

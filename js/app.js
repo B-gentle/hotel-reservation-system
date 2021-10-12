@@ -5,6 +5,14 @@ $(function() {
 });
 
 
+const names = ['bright', 'bee', 'honest', 'caro'];
+
+const fullNames = names.map(function(names){
+  return `${names} Eyo`;
+});
+
+console.log(fullNames)
+
 // let checkInDate = document.querySelector('#checkInDate');
 // let duration = document.querySelector('#duration');
 // let checkOutDate = document.querySelector('#checkOutDate');
